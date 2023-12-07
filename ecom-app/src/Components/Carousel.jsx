@@ -12,7 +12,6 @@ const Carousel = () => {
     ({ getSlideImageReducer }) => getSlideImageReducer
   );
 
- 
   useEffect(() => {
     dispatch(getImages());
   }, []);
@@ -29,21 +28,129 @@ const Carousel = () => {
   return (
     <div>
       <Slider {...settings}>
-        {imageData?.data?.map((item, i) => (
-          <Box
-            key={i}
-            w="100%"
-            h="60vh"
-            bgImage="url('https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg')"
-            bgPosition="center"
-            bgRepeat="no-repeat"
-            bgColor="#F0FFF4"
+        {/* {imageData?.data?.map((item, i) => ( */}
+        <Box
+          // key={i}
+          w="100%"
+          h="60vh"
+          bgImage="url('https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg')"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          bgColor="#F0FFF4"
+        >
+          <Text
+            color="white"
+            as="bold"
+            fontSize="25px"
+            float="left"
+            ml="120px"
+            mt="20px"
           >
-            <Text color="white" as='bold' fontSize='25px' float="left" ml="120px" mt='20px'>
-              {item.name} - {item.product_image_type}
-            </Text>
-          </Box>
-        ))}
+            {/* {item.name} - {item.product_image_type} */}
+          </Text>
+        </Box>
+
+        <Box
+          // key={i}
+          w="100%"
+          h="60vh"
+          bgImage="url('https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg')"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          bgColor="#F0FFF4"
+        >
+          <Text
+            color="white"
+            as="bold"
+            fontSize="25px"
+            float="left"
+            ml="120px"
+            mt="20px"
+          >
+            {/* {item.name} - {item.product_image_type} */}
+          </Text>
+        </Box>
+        <Box
+          // key={i}
+          w="100%"
+          h="60vh"
+          bgImage="url('https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg')"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          bgColor="#F0FFF4"
+        >
+          <Text
+            color="white"
+            as="bold"
+            fontSize="25px"
+            float="left"
+            ml="120px"
+            mt="20px"
+          >
+            {/* {item.name} - {item.product_image_type} */}
+          </Text>
+        </Box>
+        <Box
+          // key={i}
+          w="100%"
+          h="60vh"
+          bgImage="url('https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg')"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          bgColor="#F0FFF4"
+        >
+          <Text
+            color="white"
+            as="bold"
+            fontSize="25px"
+            float="left"
+            ml="120px"
+            mt="20px"
+          >
+            {/* {item.name} - {item.product_image_type} */}
+          </Text>
+        </Box>
+        <Box
+          // key={i}
+          w="100%"
+          h="60vh"
+          bgImage="url('https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg')"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          bgColor="#F0FFF4"
+        >
+          <Text
+            color="white"
+            as="bold"
+            fontSize="25px"
+            float="left"
+            ml="120px"
+            mt="20px"
+          >
+            {/* {item.name} - {item.product_image_type} */}
+          </Text>
+        </Box>
+        <Box
+          // key={i}
+          w="100%"
+          h="60vh"
+          bgImage="url('https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg')"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          bgColor="#F0FFF4"
+        >
+          <Text
+            color="white"
+            as="bold"
+            fontSize="25px"
+            float="left"
+            ml="120px"
+            mt="20px"
+          >
+            {/* {item.name} - {item.product_image_type} */}
+          </Text>
+        </Box>
+        {/* ))} */}
       </Slider>
     </div>
   );

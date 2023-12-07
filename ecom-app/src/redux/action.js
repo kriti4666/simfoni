@@ -23,3 +23,28 @@ export const getImages = () => async (dispatch) => {
     dispatch({type: productActionType.GET_IMAGE_FAILURE})
   }
 };
+export const productListData = () => async (dispatch) => {
+  dispatch({type: productActionType.GET_PRODUCT_LIST_REQUEST})
+
+  const options = {
+    method: "GET",
+    url: "https://wayfair.p.rapidapi.com/products/list",
+    
+    headers: {
+      "X-RapidAPI-Key":
+        "fd97ccea40mshf5e99247ef2ca55p19ca24jsnfbb63dde9cdd",
+      "X-RapidAPI-Host": "wayfair.p.rapidapi.com",
+    },
+  };
+
+  try {
+    const response = await axios.request(options);
+    const data = response.data?.response?.data.category.browse.products || [] ;
+    dispatch({type: productActionType.GET_PRODUCT_LIST_SUCCESS, payload: data})
+} catch (error) {
+    console.error(error);
+    dispatch({type: productActionType.GET_PRODUCT_LIST_FAILURE, payload: error})
+  }
+};
+
+
